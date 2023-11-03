@@ -47,9 +47,9 @@ odrv0.config.brake_resistance = 1.2
 # 5. Контроллер. В зависимости от ситуации изменяем параметры ПИ-регулятора. Ниже по умолчанию:
 ```
 
-odrv0.axis0.controller.config.pos_gain = 30
-odrv0.axis0.controller.config.vel_gain = 20
-odrv0.axis0.controller.config.vel_integrator_gain = 35
+odrv0.axis0.controller.config.pos_gain = 0
+odrv0.axis0.controller.config.vel_gain = 0.055
+odrv0.axis0.controller.config.vel_integrator_gain = 0.013
 odrv0.axis0.controller.config.vel_limit = "inf"
 ```
 
@@ -171,9 +171,9 @@ odrv0.axis1.encoder.config.mode = ENCODER_MODE_HALL
 odrv0.axis1.encoder.config.cpr = 8 * 6
 odrv0.axis1.encoder.config.calib_scan_distance = 90
 
-odrv0.axis1.controller.config.pos_gain = 30
-odrv0.axis1.controller.config.vel_gain = 20
-odrv0.axis1.controller.config.vel_integrator_gain = 35
+odrv0.axis1.controller.config.pos_gain = 0
+odrv0.axis1.controller.config.vel_gain = 0.055
+odrv0.axis1.controller.config.vel_integrator_gain = 0.013
 odrv0.axis1.controller.config.vel_limit = "inf"
 ```
 Сохраняем параметры:
